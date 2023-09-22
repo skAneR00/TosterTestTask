@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <section class="header">
+            <p>🌍 SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA 🌍</p>
+        </section>
+        <section class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+            <h2>orthopedic slippers</h2>
+        </section>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="timer">
+                <p>Limited Offer</p>
+                <span id="timer-field">05:00:00</span>
+            </div>
+            <div class="price">
+                <span id="discount">R 250.00</span>
+                <span id="current-price">R 160.00</span>
+            </div>
+        </section>
+        <section class="product-info">
+            <div class="seller-info">
+                <span>Excellent 4.8/5</span>
+                <img src="./assets/seller.svg" alt="Seller logo">
+                <span>best selling</span>
+            </div>
+            <div class="product-card">
+                <h3>Orthopedic Slippers</h3>
+                <img src="./assets/products/black.jpg" alt="product photo" id="product-photo-main">
+                <div class="product-colors">
+                </div>
+                <div class="description">
+                    <p><span>Fast Delivery:</span> 2-4 days from SA 🌍</p>
+                    <p><span>In Stock:</span> Shipping from Johannesburg 🌍</p>
+                    <div class="rating">
+                        <img src="./assets/rating.png" alt="rating">
+                        <span>(10)</span>
+                    </div>
+                </div>
+                <div class="dropdowns">
+                    <div class="picker">
+                        <span>color</span>
+                        <div class="dropdown-block">
+                            <button class="dropdown-button" id="dropdown-button-colors">Black</button>
+                            <ul class="dropdown-list" id="dropdown-list-colors">
+                            </ul>
+                            <img src="./assets/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="picker">
+                        <span>size</span>
+                        <div class="dropdown-block">
+                            <button class="dropdown-button" id="dropdown-button-count">2</button>
+                            <ul class="dropdown-list" id="dropdown-list-count">
+                                <li onclick="closeDropdownListCount(this)">2</li>
+                                <li onclick="closeDropdownListCount(this)">3</li>
+                                <li onclick="closeDropdownListCount(this)">4</li>
+                                <li onclick="closeDropdownListCount(this)">5</li>
+                            </ul>
+                            <img src="./assets/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+                <button id="buy-button">
+                    <a href="https://www.youtube.com/" target="_blank">Buy Now</a>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
